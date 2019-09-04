@@ -1,2 +1,2 @@
-mult(0, [0]) :- !.
-mult(1, R) :- mult(0, [R1]), R2 is R1 + 3, append(R2, R1, R), !. 
+mult(0, 0) :- !.
+mult(N, R) :- N > 0, N1 is N - 1, mult(N1,R1), R is R1 + 3. 
